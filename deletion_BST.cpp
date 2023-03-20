@@ -55,7 +55,7 @@ Node* delete_Node(Node* root, int x){
                 temp = temp->left;
             }
             root->data = temp->data;
-            root->right = delete_Node(root,temp->data);
+            root->right = delete_Node(root->right,temp->data);
             return root;
         }
     }
